@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tana.OnliCh | תנ"ך דיגיטלי</title>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-bg: #08080a;
+            --accent-blue: #5d9cec;
+            --card-surface: #121216;
+        }
+
+        body {
+            background-color: var(--deep-bg);
+            color: #ffffff;
+            font-family: 'SBL Hebrew', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #15151c, var(--deep-bg));
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-gold);
+        }
+
+        /* Nova Logo Tana.OnliCh */
+        .logo {
+            font-family: sans-serif;
+            font-size: 3.8rem;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+        .logo span { color: var(--primary-gold); }
+        .logo .dot { color: var(--accent-blue); }
+
+        .subtitle { 
+            font-size: 1.3rem; 
+            opacity: 0.7; 
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1250px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .category-card {
+            background: var(--card-surface);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(197, 160, 89, 0.1);
+        }
+
+        h2 { 
+            color: var(--primary-gold); 
+            font-size: 2.2rem; 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .book-link {
+            background: #1e1e26;
+            color: #efefef;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.3rem;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .book-link:hover {
+            background: var(--primary-gold);
+            color: #000;
+            font-weight: bold;
+            border-color: #fff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 60px;
+            background: #050507;
+            border-top: 1px solid #222;
+        }
+
+        .sefaria-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 25px;
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            border: 1px solid var(--accent-blue);
+            padding: 8px 18px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Tana<span class="dot">.</span>Onli<span>Ch</span></div>
+    <div class="subtitle">הַפּוֹרְטָל הַמִּתְקַדֵּם לְלִמּוּד תַּנַ"ךְ</div>
+    <a href="https://www.sefaria.org" target="_blank" class="sefaria-badge">
+        Powered by Sefaria Library
+    </a>
+</header>
+
+<div class="container">
+
+    <section class="category-card">
+        <h2>תּוֹרָה</h2>
+        <div class="links-grid">
+            <a href="https://www.sefaria.org/Genesis?lang=he" target="_blank" class="book-link">בְּרֵאשִׁית</a>
+            <a href="https://www.sefaria.org/Exodus?lang=he" target="_blank" class="book-link">שְׁמוֹת</a>
+            <a href="https://www.sefaria.org/Leviticus?lang=he" target="_blank" class="book-link">וַיִּקְרָא</a>
+            <a href="https://www.sefaria.org/Numbers?lang=he" target="_blank" class="book-link">בְּמִדְבַּר</a>
+            <a href="https://www.sefaria.org/Deuteronomy?lang=he" target="_blank" class="book-link">דְּבָרִים</a>
+        </div>
+    </section>
+
+    <section class="category-card">
+        <h2>נְבִיאִים</h2>
+        <div class="links-grid">
+            <a href="https://www.sefaria.org/Joshua?lang=he" target="_blank" class="book-link">יְהוֹשֻׁעַ</a>
+            <a href="https://www.sefaria.org/Judges?lang=he" target="_blank" class="book-link">שֹׁפְטִים</a>
+            <a href="https://www.sefaria.org/I_Samuel?lang=he" target="_blank" class="book-link">שְׁמוּאֵל א</a>
+            <a href="https://www.sefaria.org/II_Samuel?lang=he" target="_blank" class="book-link">שְׁמוּאֵל ב</a>
+            <a href="https://www.sefaria.org/I_Kings?lang=he" target="_blank" class="book-link">מְלָכִים א</a>
+            <a href="https://www.sefaria.org/II_Kings?lang=he" target="_blank" class="book-link">מְלָכִים ב</a>
+            <a href="https://www.sefaria.org/Isaiah?lang=he" target="_blank" class="book-link">יְשַׁעְיָהוּ</a>
+            <a href="https://www.sefaria.org/Jeremiah?lang=he" target="_blank" class="book-link">יִרְמְיָהוּ</a>
+            <a href="https://www.sefaria.org/Ezekiel?lang=he" target="_blank" class="book-link">יְחֶזְקֵאל</a>
+            <a href="https://www.sefaria.org/Hosea?lang=he" target="_blank" class="book-link">תְּרֵי עָשָׂר</a>
+        </div>
+    </section>
+
+    <section class="category-card">
+        <h2>כְּתוּבִים</h2>
+        <div class="links-grid">
+            <a href="https://www.sefaria.org/Psalms?lang=he" target="_blank" class="book-link">תְּהִלִּים</a>
+            <a href="https://www.sefaria.org/Proverbs?lang=he" target="_blank" class="book-link">מִשְׁלֵי</a>
+            <a href="https://www.sefaria.org/Job?lang=he" target="_blank" class="book-link">אִיּוֹב</a>
+            <a href="https://www.sefaria.org/Song_of_Songs?lang=he" target="_blank" class="book-link">שִׁיר הַשִּׁירִים</a>
+            <a href="https://www.sefaria.org/Ruth?lang=he" target="_blank" class="book-link">רוּת</a>
+            <a href="https://www.sefaria.org/Lamentations?lang=he" target="_blank" class="book-link">אֵיכָה</a>
+            <a href="https://www.sefaria.org/Ecclesiastes?lang=he" target="_blank" class="book-link">קֹהֶלֶת</a>
+            <a href="https://www.sefaria.org/Esther?lang=he" target="_blank" class="book-link">אֶסְתֵּר</a>
+            <a href="https://www.sefaria.org/Daniel?lang=he" target="_blank" class="book-link">דָּנִיֵּאל</a>
+            <a href="https://www.sefaria.org/Ezra?lang=he" target="_blank" class="book-link">עֶזְרָא</a>
+            <a href="https://www.sefaria.org/Nehemiah?lang=he" target="_blank" class="book-link">נְחֶמְיָה</a>
+            <a href="https://www.sefaria.org/I_Chronicles?lang=he" target="_blank" class="book-link">דִּבְרֵי הַיָּמִים</a>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>מפותח על ידי מיגל סלדניה אלבקרקי</p>
+    <div style="font-family: sans-serif; letter-spacing: 2px; color: var(--primary-gold);">Tana.OnliCh © 2026</div>
+</footer>
+
+</body>
+</html>
+
